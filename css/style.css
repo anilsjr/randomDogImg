@@ -1,0 +1,35 @@
+*{
+        margin: 0; padding: 0;
+        box-sizing: border-box;
+}
+body{
+        height: 100%;
+        width: 100%;
+        background-image: url(https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+        background-repeat: no-repeat;
+        background-size: cover;
+        backdrop-filter: blur(20px);
+}     
+.box{
+  height:100vh;
+  display:flex;
+  justify-content: center;
+  flex-direction:column;
+  align-items:center;
+}
+.dogBtn{
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  background: #3e5058;
+  color:white;
+  border-radius: 20px;
+  border:none;
+}
+.dogBtn:hover{
+  cursor: pointer;
+  background: red;
+}
+.dogImage{
+  width: 500px;
+  max-height:50%;
+}

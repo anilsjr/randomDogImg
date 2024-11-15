@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Random Dog img Generater</title>
+</head>
+<body>
+    <div class="box">
+      <button class="dogBtn">Get Me A Random Dog</button>  
+      <img class="dogImage" src="https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="1">
+    </div>
+    
+<!-- script section -->
+<script>
+    const dogBtn = document.querySelector('.dogBtn');
+    const dogImage = document.querySelector('.dogImage');
+  dogBtn.addEventListener('click',()=>{
+  fetch('https://dog.ceo/api/breeds/image/random')
+    .then(result =>{
+    return result.json();
+  })
+  .then(picture=>{
+        dogImage.src = picture.message;
+        console.log(picture.message);
+        document.body.style.backgroundImage = `url(${picture.message})`;
+  });
+});
+    
+    </script>
+</body>
+</html>
