@@ -9,9 +9,11 @@
 <body>
     <div class="box">
       <button class="dogBtn">Get Me A Random Dog</button>  
-      <img class="dogImage" src="https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="1">
+      <img class="dogImage" src="dogapi.png" alt="1">
     </div>
-    
+
+
+
 <!-- script section -->
 <script>
     const dogBtn = document.querySelector('.dogBtn');
@@ -24,8 +26,9 @@
   .then(picture=>{
         dogImage.src = picture.message;
         console.log(picture.message);
-        document.body.style.backgroundImage = `url(${picture.message})`;
+        //document.body.style.backgroundImage = `url(${picture.message})`;
   });
+  console.log("thened")
 });
     
     </script>

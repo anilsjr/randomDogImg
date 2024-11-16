@@ -5,10 +5,9 @@
 body{
         height: 100%;
         width: 100%;
-        background-image: url(https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+        background: lightslategray;
         background-repeat: no-repeat;
         background-size: cover;
-        backdrop-filter: blur(20px);
 }     
 .box{
   height:100vh;
